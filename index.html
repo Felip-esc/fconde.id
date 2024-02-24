@@ -251,16 +251,6 @@ strong {
 
 
     <script>
-      function getDados() {
-      var url = 'URL_DO_SEU_SCRIPT';
-      
-      fetch(url)
-        .then(response => response.json())
-        .then(data => {
-          console.log(data); // Aqui você pode fazer o que quiser com os dados
-        })
-        .catch(error => console.error('Erro:', error));
-    }
       document.getElementById('numeroLoja').addEventListener('input', function(e) {
     var value = e.target.value.replace(/\D/g, ''); // Remove caracteres não numéricos
     var formattedValue = formatCnpj(value);
